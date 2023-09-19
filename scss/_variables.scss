@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "IranSans";
+    src: url("/Fonts/IRAN\ Sans\ Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "IranSansBold";
+    src: url("../Fonts/IRAN\ Sans\ Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Vazir";
+    src:
+        url("/Fonts/Vazir.eot"),
+        url("/Fonts/Vazir.ttf") format("truetype"),
+        url("/Fonts/Vazir.woff") format("woff"),
+        url("/Fonts/Vazir.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Vazir";
+    src:
+        url("../Fonts/Vazir-Light.eot"),
+        url("../Fonts/Vazir-Light.ttf") format("truetype"),
+        url("../Fonts/Vazir-Light.woff") format("woff"),
+        url("../Fonts/Vazir-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Vazir";
+    src:
+        url("../Fonts/Vazir-Bold.eot"),
+        url("../Fonts/Vazir-Bold.ttf") format("truetype"),
+        url("../Fonts/Vazir-Bold.woff") format("woff"),
+        url("../Fonts/Vazir-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Vazir";
+    src:
+        url("../Fonts/Vazir-Bold.eot"),
+        url("../Fonts/Vazir-Bold.ttf") format("truetype"),
+        url("../Fonts/Vazir-Bold.woff") format("woff"),
+        url("../Fonts/Vazir-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "IranYekanR";
+    src:
+        url("../Fonts/iranyekanwebregular.eot"),
+        url("../Fonts/iranyekanwebregular.woff") format("woff");
+}
+@font-face {
+    font-family: "IranYekanM";
+    src:
+        url("../Fonts/iranyekanwebmedium.eot"),
+        url("../Fonts/iranyekanwebmedium.woff") format("woff");
+}
+@font-face {
+    font-family: "IranYekanB";
+    src:
+        url("../Fonts/iranyekanwebbold.eot"),
+        url("../Fonts/iranyekanwebbold.woff") format("woff");
+}
+:root {
+    /**
+    *   colors
+    */
+    --st-patricks-blue: hsl(236, 57%, 28%);
+    --amaranth-purple: hsl(335, 88%, 38%);
+    --royal-blue-dark: hsl(231, 68%, 21%);
+    --chrome-yellow: hsl(39, 100%, 52%);
+    --space-cadet-1: hsl(230, 41%, 25%);
+    --space-cadet-2: hsl(230, 59%, 16%);
+    --winter-sky_50: hsla(335, 87%, 53%, 0.5);
+    --purple-navy: hsl(236, 26%, 43%);
+    --ksu-purple: hsl(275, 54%, 33%);
+    --winter-sky: hsl(335, 87%, 53%);
+    --razzmatazz: hsl(335, 87%, 51%);
+    --platinum: hsl(0, 0%, 90%);
+    --black_70: hsla(0, 0%, 0%, 0.7);
+    --rajah: hsl(29, 99%, 67%);
+    --blue-sky: hsl(204, 88%, 56%);
+    --dark-sky: hsl(205, 20%, 19%);
+    --purple-classic: hsl(274, 100%, 46%);
+    --green: hsl(172, 59%, 49%);
+    --white: hsl(0, 0%, 100%);
+
+    --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0, var(--ksu-purple) 51%, var(--royal-blue-dark));
+    --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+    --gradient-3: linear-gradient(90deg, var(--blue-sky), var(--purple-classic));
+    --gradient-4: linear-gradient(90deg, var(--green), var(--blue-sky));
+    --gradient-5: linear-gradient(90deg, var(--blue-sky), var(--green));
+    --gradient-6: linear-gradient(90deg, var(--dark-sky), var(--winter-sky_50));
+    --gradient-7: linear-gradient(133deg, var(--winter-sky_50), var(--blue-sky));
+    --gradient-8: linear-gradient(154deg, var(--blue-sky), var(--platinum));
+    --gradient-9: linear-gradient(169deg, var(--platinum), var(--winter-sky_50), var(--purple-classic), var(--purple-navy));
+
+    /**
+    *   typography
+    */
+    --ff-source-sans-pro: "Source Sans Pro", sans-serif;
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-fa-primary: "IranSans", "Vazir", sans-serif, tahoma;
+    --ff-fa-secondary: "Vazir", sans-serif, tahoma;
+    --ff-iranyekanRegular: "IranYekanR", tahoma;
+    --ff-iranyekanMedium: "IranYekanM", tahoma;
+    --ff-iranyekanBold: "IranYekanB", tahoma;
+
+    --fs-1: 4.2rem;
+    --fs-2: 3.8rem;
+    --fs-3: 3.2rem;
+    --fs-4: 2.5rem;
+    --fs-5: 2.4rem;
+    --fs-6: 2rem;
+    --fs-7: 1.8rem;
+    --fs-8: 1.5rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /**
+    *   Spacing
+    */
+    --section-padding: 60px;
+    // border radius
+    --radius-4: 4px;
+    --radius-12: 12px;
+
+    /**
+    *   Transition
+    */
+    --transition-1: 0.15s ease;
+    --transition-2: 0.35s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+
+    /**
+    *   Shadows
+    */
+    --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+}
+
+/*------------------------------------------------------*\
+    #Reset
+\*------------------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+input,
+span,
+button,
+ion-icon {
+    display: block;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+input {
+    width: 100%;
+}
+ion-icon {
+    pointer-events: none;
+}
+img {
+    height: auto;
+}
+address {
+    font-style: normal;
+}
+
+html {
+    font-family: var(--ff-fa-primary);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--purple-navy);
+    font-size: 1.6rem;
+}
+/**
+*   customize scrollbarx
+*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 85%);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--st-patricks-blue)
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 70%);
+}

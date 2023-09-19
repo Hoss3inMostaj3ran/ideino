@@ -1,0 +1,16 @@
+{
+  "name": "ideino-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "sass":"sass -w scss/style.scss css/style.css",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1",
+    "vite": "^4.4.5"
+  }
+}
