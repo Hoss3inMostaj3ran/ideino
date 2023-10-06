@@ -966,14 +966,13 @@ body {
 
 .webBox {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
 }
 .webBox-item {
   margin-inline: auto;
-  padding: 0px 1rem;
-  margin: 0px 1rem;
+  padding: 0 1.2rem;
   width: 100%;
 }
 
@@ -1149,6 +1148,9 @@ body {
     gap: 20px;
     padding: 30px;
   }
+  .webBox-item {
+    padding: 0 2rem;
+  }
   /**
   * FOOTER
   */
@@ -1241,6 +1243,15 @@ body {
   .blog-card {
     display: grid;
     grid-template-columns: 0.75fr 1fr;
+  }
+  /**
+  *   Webtools
+  */
+  .webBox {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .webBox-item {
+    padding: 0 1.2rem;
   }
   /**
      * FOOTER
@@ -1376,6 +1387,15 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   /**
+  *   Webtools
+  */
+  .webBox {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .webBox-item {
+    padding: 0 1.8rem;
+  }
+  /**
      * FOOTER
      */
   .footer-top .container {
@@ -1420,6 +1440,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  /**
+  *   Webtools
+  */
+  .webBox {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .webBox-item {
+    padding: 0 2.1rem;
   }
   /**
      * FOOTER
