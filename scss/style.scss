@@ -642,7 +642,7 @@
 \*-----------------------------------*/
 
 .blog {
-    padding-block-end: 120px;
+    padding-block-end: 10px;
     &-list {
         display: grid;
         gap: 30px;
@@ -714,6 +714,69 @@
 .comment {
     color: inherit;
     margin-inline-start: auto;
+}
+
+/*-----------------------------------*\
+  #WebTools
+\*-----------------------------------*/
+
+// Tooltip
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    font-family: Tahoma, sans-serif BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--white);
+    border: 2px solid var(--green);
+    border-radius: 5%;
+    background-color: var(--purple-navy);
+    padding: 5px 2px;
+  }
+  
+  .hover-text:hover .tooltip-text {
+    visibility: visible;
+  }
+  
+  .top {
+    top: -50px;
+    left: 0%;
+  }
+  
+  .hover-text {
+    position: relative;
+    display: -webkit-box;
+    margin: 40px;
+    text-align: center;
+    font-family: var(--ff-poppins);
+    
+  }
+/**arrows**/
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  .top::after{ 
+    top: 100%;
+    left: 60%;
+  }
+
+
+.webBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    &-item {
+        margin-inline: auto;
+        padding: 0px 1rem;
+        margin: 0px 1rem;
+        width: 100%;
+    }
 }
 
 /*-----------------------------------*\
@@ -1229,7 +1292,7 @@
        */
 
     // .blog-list {
-        // grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
     // }
 
     // .blog-card {
